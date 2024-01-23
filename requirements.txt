@@ -12,4 +12,4 @@ torchaudio
 uvicorn
 cutlet
 fugashi[unidic-lite]
-tts==0.21.3
+tts==0.22.0
