@@ -9,6 +9,7 @@ RUN apt-get update && \
     apt-get install --no-install-recommends -y \
     python3-dev portaudio19-dev libportaudio2 libasound2-dev libportaudiocpp0 \
     git python3 python3-pip make g++ ffmpeg && \
+    apt-get install -y python3-venv && \
     rm -rf /var/lib/apt/lists/* && \
     python3 -m pip install --upgrade pip setuptools wheel ninja virtualenv
 
