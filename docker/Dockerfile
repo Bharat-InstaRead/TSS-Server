@@ -37,4 +37,4 @@ ENV LISTEN_PORT=8020 \
     MODELS_FOLDER='xtts-server/models'
 
 # Run xtts_api_server when the container starts
-CMD ["python3", "-m", "xtts_api_server", "--listen", "-p", "${LISTEN_PORT}", "-t", "${API_URL}", "-sf", "${SPEAKERS_FOLDER}", "-o", "${OUTPUT_FOLDER}", "-mf", "${MODELS_FOLDER}", "--deepspeed"]
+CMD ["python3", "-m", "xtts_api_server", "--listen", "-p", "8020", "-t", "${API_URL}", "-sf", "${SPEAKERS_FOLDER}", "-o", "${OUTPUT_FOLDER}", "-mf", "${MODELS_FOLDER}", "--deepspeed"]
